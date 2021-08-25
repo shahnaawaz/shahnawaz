@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>screen colour</title>
+</head>
+
+<body>
+    <div class="container">
+        <table id="tbl">
+            <tr>
+                <td><button id="btnr">red</button></td>
+
+                <td><button id="btng">Green</button></td>
+                <td><button id="btnb">Blue</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="btn20">20</button></td>
+
+                <td><button id="btn30">30</button></td>
+                <td><button id="btn40">40</button></td>
+            </tr>
+
+            <tr>
+                <td><button id="btna">arial</button></td>
+
+                <td><button id="btnh">Helvetical</button></td>
+                <td><button id="btnc">Crusive</button></td>
+            </tr>
+
+
+        </table>
+    </div>
+    <div class="para">
+        <p id="txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, adipisci? Odio soluta tempore distinctio
+            qui, molestiae iure similique ut ratione, nesciunt illum quo debitis earum, cum minima mollitia? Eaque,
+            iure.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, adipisci? Odio soluta tempore distinctio
+            qui,
+            molestiae iure similique ut ratione, nesciunt illum quo debitis earum, cum minima mollitia? Eaque, iure.
+
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque, adipisci? Odio soluta tempore distinctio
+            qui,
+            molestiae iure similique ut ratione, nesciunt illum quo debitis earum, cum minima mollitia? Eaque, iure.
+
+        </p>
+
+    </div>
+
+
+    <script>
+
+
+        function greenData() {
+            document.getElementById("txt").style.color = "Green";
+        }
+        document.getElementById("btng").addEventListener("click", greenData)
+
+        function redData() {
+            document.getElementById("txt").style.color = "red";
+        }
+        document.getElementById("btnr").addEventListener("click", redData)
+
+        function blueData() {
+            document.getElementById("txt").style.color = "blue";
+        }
+        document.getElementById("btnb").addEventListener("click", blueData)
+
+
+        function testx() {
+            document.getElementById("txt").style.fontSize = "20px";
+        }
+        document.getElementById("btn20").addEventListener("click", testx)
+
+
+        function test30() {
+            document.getElementById("txt").style.fontSize = "30px";
+        }
+        document.getElementById("btn30").addEventListener("click", test30)
+
+
+
+        function test40() {
+            document.getElementById("txt").style.fontSize = "40px";
+        }
+        document.getElementById("btn40").addEventListener("click", test40)
+
+
+        function fontchange() {
+            document.getElementById("txt").style.fontFamily = "arial"
+        }
+        document.getElementById("btna").addEventListener("click", fontchange)
+
+        function fontchangeh() {
+            document.getElementById("txt").style.fontFamily = "helvetica"
+        }
+        document.getElementById("btnh").addEventListener("click", fontchangeh)
+
+
+
+        function fontChangec() {
+            document.getElementById("txt").style.fontFamily = "sans-serif"
+        }
+        document.getElementById("btnc").addEventListener("click", fontChangec)
+
+    </script>
+</body>
+
+</html>
